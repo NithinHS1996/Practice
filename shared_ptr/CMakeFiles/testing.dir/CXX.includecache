@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nithin/Everything/C++/boost_exp/shared_ptr/shared_ptr.cpp
+iostream
+-
+boost/shared_ptr.hpp
+-
+
