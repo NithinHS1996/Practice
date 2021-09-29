@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nithin/Everything/C++/boost_exp/ptr_container/ptr_container.cpp
+iostream
+-
+boost/ptr_container/ptr_vector.hpp
+-
+boost/ptr_container/ptr_set.hpp
+-
+boost/ptr_container/indirect_fun.hpp
+-
+
