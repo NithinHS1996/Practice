@@ -4,8 +4,10 @@
 #include<boost/format.hpp>
 #include<boost/regex.hpp>
 #include<boost/tokenizer.hpp>
+#include<boost/spirit/include/qi.hpp>
 #include<vector>
 #include<string>
+
 using namespace boost::algorithm;
 int main()
 {
@@ -52,5 +54,21 @@ int main()
 	tokenizer1 tok2{str3,sep1};
 	for(tokenizer1::iterator it1 = tok2.begin();it1 != tok2.end();++it1)
 		std::cout << *it1 << "\n";
-	
+
+	using namespace boost::spirit;
+	std::string str4;
+	std::getline(std::cin,str4);
+	auto it3 = str4.begin();
+	bool match = qi::parse(it3, str4.end(), ascii::digit);
+	std::cout << std::boolalpha << match << "\n";
+	if(it3 != str4.end())
+		std::cout << std::string{it3,str4.end()} << "\n";
+
+	std::string str5;
+	std::getline(std::cin,str5);
+	auto it4 = str5.begin();
+	bool match1 = qi::phrase_parse(it4, str5.end(), ascii::digit, ascii::space);
+	std::cout << std::boolalpha << match1 << "\n";
+	if(it4 != str5.end())
+		std::cout << std::string{it4,str5.end()} << "\n";
 }
