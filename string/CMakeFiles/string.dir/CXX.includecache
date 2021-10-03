@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nithin/Everything/C++/boost_exp/string/string.cpp
+iostream
+-
+boost/algorithm/string.hpp
+-
+boost/lexical_cast.hpp
+-
+boost/format.hpp
+-
+boost/regex.hpp
+-
+boost/tokenizer.hpp
+-
+vector
+-
+string
+-
+
