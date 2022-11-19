@@ -1,0 +1,3 @@
+/home/nithin/Everything/Linux_with_c++/boost_timer/build/CMakeFiles/timer.dir
+/home/nithin/Everything/Linux_with_c++/boost_timer/build/CMakeFiles/edit_cache.dir
+/home/nithin/Everything/Linux_with_c++/boost_timer/build/CMakeFiles/rebuild_cache.dir
