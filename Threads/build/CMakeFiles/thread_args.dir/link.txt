@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/thread_args.dir/src/thread_args.cpp.o -o thread_args  -lpthread 

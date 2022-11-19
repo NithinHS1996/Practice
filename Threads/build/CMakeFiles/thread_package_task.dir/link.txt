@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/thread_package_task.dir/src/thread_package_task.cpp.o -o thread_package_task  -lpthread 

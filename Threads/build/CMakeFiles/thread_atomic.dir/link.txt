@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/thread_atomic.dir/src/thread_atomic.cpp.o -o thread_atomic  -lpthread 

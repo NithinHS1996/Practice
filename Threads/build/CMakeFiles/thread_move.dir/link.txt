@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/thread_move.dir/src/thread_move.cpp.o -o thread_move  -lpthread 
