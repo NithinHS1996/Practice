@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/boost_socket.dir/src/boost_socket.cpp.o -o boost_socket  /usr/lib/x86_64-linux-gnu/libboost_program_options.so -lboost_filesystem -lboost_system 

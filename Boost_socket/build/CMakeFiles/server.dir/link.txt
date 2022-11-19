@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/src/server.cpp.o -o server  /usr/lib/x86_64-linux-gnu/libboost_program_options.so -lboost_filesystem -lboost_system 

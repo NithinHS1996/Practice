@@ -1,0 +1,4 @@
+/home/nithin/Everything/Linux_with_c++/Boost_socket/build/CMakeFiles/server.dir
+/home/nithin/Everything/Linux_with_c++/Boost_socket/build/CMakeFiles/client.dir
+/home/nithin/Everything/Linux_with_c++/Boost_socket/build/CMakeFiles/edit_cache.dir
+/home/nithin/Everything/Linux_with_c++/Boost_socket/build/CMakeFiles/rebuild_cache.dir
