@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/open_closed.dir/src/SOLID/open_closed.cpp.o -o open_closed 
