@@ -1,0 +1,4 @@
+/home/nithin/Everything/Linux_with_c++/IPC/sockets/build/CMakeFiles/streamserver.dir
+/home/nithin/Everything/Linux_with_c++/IPC/sockets/build/CMakeFiles/streamclient.dir
+/home/nithin/Everything/Linux_with_c++/IPC/sockets/build/CMakeFiles/edit_cache.dir
+/home/nithin/Everything/Linux_with_c++/IPC/sockets/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+/home/nithin/Everything/Linux_with_c++/IPC/signals/build/CMakeFiles/sigsent.dir
+/home/nithin/Everything/Linux_with_c++/IPC/signals/build/CMakeFiles/sigreceive.dir
+/home/nithin/Everything/Linux_with_c++/IPC/signals/build/CMakeFiles/sigself.dir
+/home/nithin/Everything/Linux_with_c++/IPC/signals/build/CMakeFiles/edit_cache.dir
+/home/nithin/Everything/Linux_with_c++/IPC/signals/build/CMakeFiles/rebuild_cache.dir

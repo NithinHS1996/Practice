@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sigself.dir/src/sigself.cpp.o -o sigself 

@@ -1,0 +1,4 @@
+/home/nithin/Everything/Linux_with_c++/IPC/message_queue/build/CMakeFiles/msgsender.dir
+/home/nithin/Everything/Linux_with_c++/IPC/message_queue/build/CMakeFiles/msgreceiver.dir
+/home/nithin/Everything/Linux_with_c++/IPC/message_queue/build/CMakeFiles/edit_cache.dir
+/home/nithin/Everything/Linux_with_c++/IPC/message_queue/build/CMakeFiles/rebuild_cache.dir
