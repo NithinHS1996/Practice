@@ -1,5 +1,6 @@
 /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/single_rsp.dir
 /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/factory.dir
 /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/singleton.dir
+/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/builder.dir
 /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/edit_cache.dir
 /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles/rebuild_cache.dir

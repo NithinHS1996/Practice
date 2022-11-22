@@ -155,6 +155,43 @@ singleton/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/build
 .PHONY : singleton/fast
 
+#=============================================================================
+# Target rules for targets named builder
+
+# Build rule for target.
+builder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 builder
+.PHONY : builder
+
+# fast build rule for target.
+builder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/build
+.PHONY : builder/fast
+
+src/Builder/builder.o: src/Builder/builder.cpp.o
+.PHONY : src/Builder/builder.o
+
+# target to build an object file
+src/Builder/builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/src/Builder/builder.cpp.o
+.PHONY : src/Builder/builder.cpp.o
+
+src/Builder/builder.i: src/Builder/builder.cpp.i
+.PHONY : src/Builder/builder.i
+
+# target to preprocess a source file
+src/Builder/builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/src/Builder/builder.cpp.i
+.PHONY : src/Builder/builder.cpp.i
+
+src/Builder/builder.s: src/Builder/builder.cpp.s
+.PHONY : src/Builder/builder.s
+
+# target to generate assembly for a file
+src/Builder/builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/src/Builder/builder.cpp.s
+.PHONY : src/Builder/builder.cpp.s
+
 src/Factory_pattern/factory.o: src/Factory_pattern/factory.cpp.o
 .PHONY : src/Factory_pattern/factory.o
 
@@ -235,9 +272,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... builder"
 	@echo "... factory"
 	@echo "... single_rsp"
 	@echo "... singleton"
+	@echo "... src/Builder/builder.o"
+	@echo "... src/Builder/builder.i"
+	@echo "... src/Builder/builder.s"
 	@echo "... src/Factory_pattern/factory.o"
 	@echo "... src/Factory_pattern/factory.i"
 	@echo "... src/Factory_pattern/factory.s"

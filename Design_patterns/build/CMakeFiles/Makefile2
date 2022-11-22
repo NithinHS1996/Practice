@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/nithin/Everything/Git_practice/Design_patterns/build
 all: CMakeFiles/single_rsp.dir/all
 all: CMakeFiles/factory.dir/all
 all: CMakeFiles/singleton.dir/all
+all: CMakeFiles/builder.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/single_rsp.dir/clean
 clean: CMakeFiles/factory.dir/clean
 clean: CMakeFiles/singleton.dir/clean
+clean: CMakeFiles/builder.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +87,7 @@ clean: CMakeFiles/singleton.dir/clean
 CMakeFiles/single_rsp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_rsp.dir/build.make CMakeFiles/single_rsp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_rsp.dir/build.make CMakeFiles/single_rsp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=3,4 "Built target single_rsp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=5,6 "Built target single_rsp"
 .PHONY : CMakeFiles/single_rsp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -111,7 +113,7 @@ CMakeFiles/single_rsp.dir/clean:
 CMakeFiles/factory.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=1,2 "Built target factory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=3,4 "Built target factory"
 .PHONY : CMakeFiles/factory.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +139,7 @@ CMakeFiles/factory.dir/clean:
 CMakeFiles/singleton.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=5,6 "Built target singleton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=7,8 "Built target singleton"
 .PHONY : CMakeFiles/singleton.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,6 +157,32 @@ singleton: CMakeFiles/singleton.dir/rule
 CMakeFiles/singleton.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/clean
 .PHONY : CMakeFiles/singleton.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/builder.dir
+
+# All Build rule for target.
+CMakeFiles/builder.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=1,2 "Built target builder"
+.PHONY : CMakeFiles/builder.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/builder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/builder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles 0
+.PHONY : CMakeFiles/builder.dir/rule
+
+# Convenience name for target.
+builder: CMakeFiles/builder.dir/rule
+.PHONY : builder
+
+# clean rule for target.
+CMakeFiles/builder.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/clean
+.PHONY : CMakeFiles/builder.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
