@@ -1,4 +1,4 @@
-# Install script for directory: /home/nithin/Everything/Linux_with_c++/Design_patterns
+# Install script for directory: /home/nithin/Everything/Git_practice/Design_patterns
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nithin/Everything/Linux_with_c++/Design_patterns/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nithin/Everything/Git_practice/Design_patterns/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

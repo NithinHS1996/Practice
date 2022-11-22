@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nithin/Everything/Linux_with_c++/Design_patterns/src/SOLID/single_rsp.cpp" "CMakeFiles/single_rsp.dir/src/SOLID/single_rsp.cpp.o" "gcc" "CMakeFiles/single_rsp.dir/src/SOLID/single_rsp.cpp.o.d"
+  "/home/nithin/Everything/Git_practice/Design_patterns/src/SOLID/single_rsp.cpp" "CMakeFiles/single_rsp.dir/src/SOLID/single_rsp.cpp.o" "gcc" "CMakeFiles/single_rsp.dir/src/SOLID/single_rsp.cpp.o.d"
   )
 
 # Targets to which this target links.
