@@ -168,6 +168,19 @@ builder/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/build
 .PHONY : builder/fast
 
+#=============================================================================
+# Target rules for targets named prototype
+
+# Build rule for target.
+prototype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prototype
+.PHONY : prototype
+
+# fast build rule for target.
+prototype/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype.dir/build.make CMakeFiles/prototype.dir/build
+.PHONY : prototype/fast
+
 src/Builder/builder.o: src/Builder/builder.cpp.o
 .PHONY : src/Builder/builder.o
 
@@ -215,6 +228,30 @@ src/Factory_pattern/factory.s: src/Factory_pattern/factory.cpp.s
 src/Factory_pattern/factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/src/Factory_pattern/factory.cpp.s
 .PHONY : src/Factory_pattern/factory.cpp.s
+
+src/Prototype/prototype.o: src/Prototype/prototype.cpp.o
+.PHONY : src/Prototype/prototype.o
+
+# target to build an object file
+src/Prototype/prototype.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype.dir/build.make CMakeFiles/prototype.dir/src/Prototype/prototype.cpp.o
+.PHONY : src/Prototype/prototype.cpp.o
+
+src/Prototype/prototype.i: src/Prototype/prototype.cpp.i
+.PHONY : src/Prototype/prototype.i
+
+# target to preprocess a source file
+src/Prototype/prototype.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype.dir/build.make CMakeFiles/prototype.dir/src/Prototype/prototype.cpp.i
+.PHONY : src/Prototype/prototype.cpp.i
+
+src/Prototype/prototype.s: src/Prototype/prototype.cpp.s
+.PHONY : src/Prototype/prototype.s
+
+# target to generate assembly for a file
+src/Prototype/prototype.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype.dir/build.make CMakeFiles/prototype.dir/src/Prototype/prototype.cpp.s
+.PHONY : src/Prototype/prototype.cpp.s
 
 src/SOLID/single_rsp.o: src/SOLID/single_rsp.cpp.o
 .PHONY : src/SOLID/single_rsp.o
@@ -274,6 +311,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... builder"
 	@echo "... factory"
+	@echo "... prototype"
 	@echo "... single_rsp"
 	@echo "... singleton"
 	@echo "... src/Builder/builder.o"
@@ -282,6 +320,9 @@ help:
 	@echo "... src/Factory_pattern/factory.o"
 	@echo "... src/Factory_pattern/factory.i"
 	@echo "... src/Factory_pattern/factory.s"
+	@echo "... src/Prototype/prototype.o"
+	@echo "... src/Prototype/prototype.i"
+	@echo "... src/Prototype/prototype.s"
 	@echo "... src/SOLID/single_rsp.o"
 	@echo "... src/SOLID/single_rsp.i"
 	@echo "... src/SOLID/single_rsp.s"

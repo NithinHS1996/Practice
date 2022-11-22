@@ -47,4 +47,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/factory.dir/DependInfo.cmake"
   "CMakeFiles/singleton.dir/DependInfo.cmake"
   "CMakeFiles/builder.dir/DependInfo.cmake"
+  "CMakeFiles/prototype.dir/DependInfo.cmake"
   )

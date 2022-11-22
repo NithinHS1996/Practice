@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/prototype.dir/src/Prototype/prototype.cpp.o -o prototype 
