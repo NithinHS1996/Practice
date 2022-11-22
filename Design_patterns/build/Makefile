@@ -142,6 +142,19 @@ factory/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/build
 .PHONY : factory/fast
 
+#=============================================================================
+# Target rules for targets named singleton
+
+# Build rule for target.
+singleton: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singleton
+.PHONY : singleton
+
+# fast build rule for target.
+singleton/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/build
+.PHONY : singleton/fast
+
 src/Factory_pattern/factory.o: src/Factory_pattern/factory.cpp.o
 .PHONY : src/Factory_pattern/factory.o
 
@@ -190,6 +203,30 @@ src/SOLID/single_rsp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_rsp.dir/build.make CMakeFiles/single_rsp.dir/src/SOLID/single_rsp.cpp.s
 .PHONY : src/SOLID/single_rsp.cpp.s
 
+src/Singleton/singleton.o: src/Singleton/singleton.cpp.o
+.PHONY : src/Singleton/singleton.o
+
+# target to build an object file
+src/Singleton/singleton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/src/Singleton/singleton.cpp.o
+.PHONY : src/Singleton/singleton.cpp.o
+
+src/Singleton/singleton.i: src/Singleton/singleton.cpp.i
+.PHONY : src/Singleton/singleton.i
+
+# target to preprocess a source file
+src/Singleton/singleton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/src/Singleton/singleton.cpp.i
+.PHONY : src/Singleton/singleton.cpp.i
+
+src/Singleton/singleton.s: src/Singleton/singleton.cpp.s
+.PHONY : src/Singleton/singleton.s
+
+# target to generate assembly for a file
+src/Singleton/singleton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/src/Singleton/singleton.cpp.s
+.PHONY : src/Singleton/singleton.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... factory"
 	@echo "... single_rsp"
+	@echo "... singleton"
 	@echo "... src/Factory_pattern/factory.o"
 	@echo "... src/Factory_pattern/factory.i"
 	@echo "... src/Factory_pattern/factory.s"
 	@echo "... src/SOLID/single_rsp.o"
 	@echo "... src/SOLID/single_rsp.i"
 	@echo "... src/SOLID/single_rsp.s"
+	@echo "... src/Singleton/singleton.o"
+	@echo "... src/Singleton/singleton.i"
+	@echo "... src/Singleton/singleton.s"
 .PHONY : help
 
 

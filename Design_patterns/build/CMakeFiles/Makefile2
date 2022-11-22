@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/nithin/Everything/Git_practice/Design_patterns/build
 # The main recursive "all" target.
 all: CMakeFiles/single_rsp.dir/all
 all: CMakeFiles/factory.dir/all
+all: CMakeFiles/singleton.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/single_rsp.dir/clean
 clean: CMakeFiles/factory.dir/clean
+clean: CMakeFiles/singleton.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +129,32 @@ factory: CMakeFiles/factory.dir/rule
 CMakeFiles/factory.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/clean
 .PHONY : CMakeFiles/factory.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/singleton.dir
+
+# All Build rule for target.
+CMakeFiles/singleton.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles --progress-num=5,6 "Built target singleton"
+.PHONY : CMakeFiles/singleton.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/singleton.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/singleton.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nithin/Everything/Git_practice/Design_patterns/build/CMakeFiles 0
+.PHONY : CMakeFiles/singleton.dir/rule
+
+# Convenience name for target.
+singleton: CMakeFiles/singleton.dir/rule
+.PHONY : singleton
+
+# clean rule for target.
+CMakeFiles/singleton.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/singleton.dir/build.make CMakeFiles/singleton.dir/clean
+.PHONY : CMakeFiles/singleton.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -75,3 +75,19 @@ target_include_directories(factory PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 
 #include the boost libraries
 target_link_libraries(factory ${Boost_LIBRARIES})
+
+#Singleton patter
+#macro to name source files
+set(SRC_FILES src/Singleton/singleton.cpp)
+
+#build the executables
+add_executable(singleton ${SRC_FILES})
+
+#link the libraries
+#target_link_libraries(linked_list pthread)
+
+#include the header files
+target_include_directories(singleton PUBLIC ${CMAKE_SOURCE_DIR}/inc)
+
+#include the boost libraries
+target_link_libraries(singleton ${Boost_LIBRARIES})
