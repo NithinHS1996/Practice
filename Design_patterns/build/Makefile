@@ -181,6 +181,43 @@ prototype/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prototype.dir/build.make CMakeFiles/prototype.dir/build
 .PHONY : prototype/fast
 
+#=============================================================================
+# Target rules for targets named adapter
+
+# Build rule for target.
+adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 adapter
+.PHONY : adapter
+
+# fast build rule for target.
+adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/build
+.PHONY : adapter/fast
+
+src/Adapter/adapter.o: src/Adapter/adapter.cpp.o
+.PHONY : src/Adapter/adapter.o
+
+# target to build an object file
+src/Adapter/adapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/src/Adapter/adapter.cpp.o
+.PHONY : src/Adapter/adapter.cpp.o
+
+src/Adapter/adapter.i: src/Adapter/adapter.cpp.i
+.PHONY : src/Adapter/adapter.i
+
+# target to preprocess a source file
+src/Adapter/adapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/src/Adapter/adapter.cpp.i
+.PHONY : src/Adapter/adapter.cpp.i
+
+src/Adapter/adapter.s: src/Adapter/adapter.cpp.s
+.PHONY : src/Adapter/adapter.s
+
+# target to generate assembly for a file
+src/Adapter/adapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/src/Adapter/adapter.cpp.s
+.PHONY : src/Adapter/adapter.cpp.s
+
 src/Builder/builder.o: src/Builder/builder.cpp.o
 .PHONY : src/Builder/builder.o
 
@@ -309,11 +346,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... adapter"
 	@echo "... builder"
 	@echo "... factory"
 	@echo "... prototype"
 	@echo "... single_rsp"
 	@echo "... singleton"
+	@echo "... src/Adapter/adapter.o"
+	@echo "... src/Adapter/adapter.i"
+	@echo "... src/Adapter/adapter.s"
 	@echo "... src/Builder/builder.o"
 	@echo "... src/Builder/builder.i"
 	@echo "... src/Builder/builder.s"

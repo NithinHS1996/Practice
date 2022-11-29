@@ -123,3 +123,19 @@ target_include_directories(prototype PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 
 #include the boost libraries
 target_link_libraries(prototype ${Boost_LIBRARIES})
+
+#adapter pattern
+#macro to name source files
+set(SRC_FILES src/Adapter/adapter.cpp)
+
+#build the executables
+add_executable(adapter ${SRC_FILES})
+
+#link the libraries
+#target_link_libraries(linked_list pthread)
+
+#include the header files
+target_include_directories(adapter PUBLIC ${CMAKE_SOURCE_DIR}/inc)
+
+#include the boost libraries
+target_link_libraries(adapter ${Boost_LIBRARIES})

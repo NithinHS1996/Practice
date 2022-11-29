@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/adapter.dir/src/Adapter/adapter.cpp.o -o adapter 
