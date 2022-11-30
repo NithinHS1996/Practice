@@ -207,6 +207,19 @@ facade/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/facade.dir/build.make CMakeFiles/facade.dir/build
 .PHONY : facade/fast
 
+#=============================================================================
+# Target rules for targets named bridge
+
+# Build rule for target.
+bridge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bridge
+.PHONY : bridge
+
+# fast build rule for target.
+bridge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bridge.dir/build.make CMakeFiles/bridge.dir/build
+.PHONY : bridge/fast
+
 src/Adapter/adapter.o: src/Adapter/adapter.cpp.o
 .PHONY : src/Adapter/adapter.o
 
@@ -230,6 +243,30 @@ src/Adapter/adapter.s: src/Adapter/adapter.cpp.s
 src/Adapter/adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/src/Adapter/adapter.cpp.s
 .PHONY : src/Adapter/adapter.cpp.s
+
+src/Bridge/bridge.o: src/Bridge/bridge.cpp.o
+.PHONY : src/Bridge/bridge.o
+
+# target to build an object file
+src/Bridge/bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bridge.dir/build.make CMakeFiles/bridge.dir/src/Bridge/bridge.cpp.o
+.PHONY : src/Bridge/bridge.cpp.o
+
+src/Bridge/bridge.i: src/Bridge/bridge.cpp.i
+.PHONY : src/Bridge/bridge.i
+
+# target to preprocess a source file
+src/Bridge/bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bridge.dir/build.make CMakeFiles/bridge.dir/src/Bridge/bridge.cpp.i
+.PHONY : src/Bridge/bridge.cpp.i
+
+src/Bridge/bridge.s: src/Bridge/bridge.cpp.s
+.PHONY : src/Bridge/bridge.s
+
+# target to generate assembly for a file
+src/Bridge/bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bridge.dir/build.make CMakeFiles/bridge.dir/src/Bridge/bridge.cpp.s
+.PHONY : src/Bridge/bridge.cpp.s
 
 src/Builder/builder.o: src/Builder/builder.cpp.o
 .PHONY : src/Builder/builder.o
@@ -384,6 +421,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... adapter"
+	@echo "... bridge"
 	@echo "... builder"
 	@echo "... facade"
 	@echo "... factory"
@@ -393,6 +431,9 @@ help:
 	@echo "... src/Adapter/adapter.o"
 	@echo "... src/Adapter/adapter.i"
 	@echo "... src/Adapter/adapter.s"
+	@echo "... src/Bridge/bridge.o"
+	@echo "... src/Bridge/bridge.i"
+	@echo "... src/Bridge/bridge.s"
 	@echo "... src/Builder/builder.o"
 	@echo "... src/Builder/builder.i"
 	@echo "... src/Builder/builder.s"

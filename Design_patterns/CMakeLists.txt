@@ -155,3 +155,19 @@ target_include_directories(facade PUBLIC ${CMAKE_SOURCE_DIR}/inc)
 
 #include the boost libraries
 target_link_libraries(facade ${Boost_LIBRARIES})
+
+#Bridge pattern
+#macro to name source files
+set(SRC_FILES src/Bridge/bridge.cpp)
+
+#build the executables
+add_executable(bridge ${SRC_FILES})
+
+#link the libraries
+#target_link_libraries(linked_list pthread)
+
+#include the header files
+target_include_directories(bridge PUBLIC ${CMAKE_SOURCE_DIR}/inc)
+
+#include the boost libraries
+target_link_libraries(bridge ${Boost_LIBRARIES})
