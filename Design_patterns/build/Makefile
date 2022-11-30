@@ -194,6 +194,19 @@ adapter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adapter.dir/build.make CMakeFiles/adapter.dir/build
 .PHONY : adapter/fast
 
+#=============================================================================
+# Target rules for targets named facade
+
+# Build rule for target.
+facade: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 facade
+.PHONY : facade
+
+# fast build rule for target.
+facade/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facade.dir/build.make CMakeFiles/facade.dir/build
+.PHONY : facade/fast
+
 src/Adapter/adapter.o: src/Adapter/adapter.cpp.o
 .PHONY : src/Adapter/adapter.o
 
@@ -241,6 +254,30 @@ src/Builder/builder.s: src/Builder/builder.cpp.s
 src/Builder/builder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/src/Builder/builder.cpp.s
 .PHONY : src/Builder/builder.cpp.s
+
+src/Facade/facade.o: src/Facade/facade.cpp.o
+.PHONY : src/Facade/facade.o
+
+# target to build an object file
+src/Facade/facade.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facade.dir/build.make CMakeFiles/facade.dir/src/Facade/facade.cpp.o
+.PHONY : src/Facade/facade.cpp.o
+
+src/Facade/facade.i: src/Facade/facade.cpp.i
+.PHONY : src/Facade/facade.i
+
+# target to preprocess a source file
+src/Facade/facade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facade.dir/build.make CMakeFiles/facade.dir/src/Facade/facade.cpp.i
+.PHONY : src/Facade/facade.cpp.i
+
+src/Facade/facade.s: src/Facade/facade.cpp.s
+.PHONY : src/Facade/facade.s
+
+# target to generate assembly for a file
+src/Facade/facade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/facade.dir/build.make CMakeFiles/facade.dir/src/Facade/facade.cpp.s
+.PHONY : src/Facade/facade.cpp.s
 
 src/Factory_pattern/factory.o: src/Factory_pattern/factory.cpp.o
 .PHONY : src/Factory_pattern/factory.o
@@ -348,6 +385,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... adapter"
 	@echo "... builder"
+	@echo "... facade"
 	@echo "... factory"
 	@echo "... prototype"
 	@echo "... single_rsp"
@@ -358,6 +396,9 @@ help:
 	@echo "... src/Builder/builder.o"
 	@echo "... src/Builder/builder.i"
 	@echo "... src/Builder/builder.s"
+	@echo "... src/Facade/facade.o"
+	@echo "... src/Facade/facade.i"
+	@echo "... src/Facade/facade.s"
 	@echo "... src/Factory_pattern/factory.o"
 	@echo "... src/Factory_pattern/factory.i"
 	@echo "... src/Factory_pattern/factory.s"
